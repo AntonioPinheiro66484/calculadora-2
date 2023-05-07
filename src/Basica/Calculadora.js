@@ -88,9 +88,9 @@ const Calculo = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.caixa}>
       <Display value={value} />
-      <View style={styles.row}>
+      <View style={styles.linha}>
         <Button title="Bin" onPress={() => botaoprecionado('Bin')} />
         <Button title="Oct" onPress={() => botaoprecionado('Oct')} />
         <Button title="Hex" onPress={() => botaoprecionado('Hex')} />
@@ -98,31 +98,31 @@ const Calculo = () => {
         <Button title="Cos" onPress={() => botaoprecionado('Cos')} />
         <Button title="Tan" onPress={() => botaoprecionado('Tan')} />
       </View>
-      <View style={styles.row}>
+      <View style={styles.linha}>
         <Button title="Limpar" onPress={() => botaoprecionado('Limpar')} />
         <Button title="(" onPress={() => botaoprecionado('(')} />
         <Button title=")" onPress={() => botaoprecionado(')')} />
         <Button title="/" onPress={() => botaoprecionado('/')} />
       </View>
-      <View style={styles.row}>
+      <View style={styles.linha}>
         <Button title="7" onPress={() => botaoprecionado('7')} />
         <Button title="8" onPress={() => botaoprecionado('8')} />
         <Button title="9" onPress={() => botaoprecionado('9')} />
         <Button title="X" onPress={() => botaoprecionado('*')} />
       </View>
-      <View style={styles.row}>
+      <View style={styles.linha}>
         <Button title="4" onPress={() => botaoprecionado('4')} />
         <Button title="5" onPress={() => botaoprecionado('5')} />
         <Button title="6" onPress={() => botaoprecionado('6')} />
         <Button title="-" onPress={() => botaoprecionado('-')} />
       </View>
-      <View style={styles.row}>
+      <View style={styles.linha}>
         <Button title="1" onPress={() => botaoprecionado('1')} />
         <Button title="2" onPress={() => botaoprecionado('2')} />
         <Button title="3" onPress={() => botaoprecionado('3')} />
         <Button title="+" onPress={() => botaoprecionado('+')} />
       </View>
-      <View style={styles.row}>
+      <View style={styles.linha}>
         <Button title="0" onPress={() => botaoprecionado('0')} />
         <Button title="." onPress={() => botaoprecionado('.')} />
         <Button title="=" onPress={() => botaoprecionado('=')} />
@@ -133,13 +133,13 @@ const Calculo = () => {
   };
   
   const styles = StyleSheet.create({
-    container: {
+    caixa: {
       flex: 1,
       backgroundColor: '#494949',
       paddingTop: 40,
       paddingHorizontal: 20,
     },
-    row: {
+    linha: {
       flexDirection: 'row',
       marginBottom: 5,
     },
